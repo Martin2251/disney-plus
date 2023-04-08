@@ -7,10 +7,10 @@ import Header from '../components/Header';
  export const theme: DefaultTheme = {
    primary: "#040714",
    secondary: "#0070f3",
-   white: '',
-   brightBlue: '',
-   silver: '',
-   darkGrey: ''
+   white: '#fff',
+   brightBlue: '#3E64E5',
+   silver: 'silver',
+   darkGrey: '#31343e'
  };
 
 function MyApp({ Component, pageProps }: AppProps) {

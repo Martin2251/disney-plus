@@ -1,10 +1,11 @@
 import React from 'react'
+import { Nav } from './style'
 
 
 
 function Header() {
   return (
-    <nav>index</nav>
+    <Nav>Header</Nav>
   )
 }
 
