@@ -1,9 +1,20 @@
 import React from 'react'
-import { Logo, Nav } from './style'
+import { Login, LoginContainer, Logo, Nav } from './style'
 
 
 
 function Header() {
+
+    const renderHeader = () => {
+        //if logged in show logged in header 
+
+        return(
+            <LoginContainer>
+            <Login onClick={() => signIn()}>Login</Login>
+          </LoginContainer>
+        )
+    }
+
   return (
     <Nav><Logo src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original"
     alt="Disney Logo" ></Logo> </Nav>
