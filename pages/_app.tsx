@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { ThemeProvider, DefaultTheme } from 'styled-components'
 import GlobalStyle from '../globalstyles'
 import Header from '../components/Header';
+import { SessionProvider } from 'next-auth/react';
 
  export const theme: DefaultTheme = {
    primary: "#040714",
@@ -18,9 +19,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
   
   <ThemeProvider theme={theme}>
-    <GlobalStyle  />
-    <Header  />
-    <Component {...pageProps} />
+    <SessionProvider session={pageProps.session}>
+      <GlobalStyle  />
+      <Header  />
+      <Component {...pageProps} />
+    </SessionProvider>
   </ThemeProvider>
   )
 }
