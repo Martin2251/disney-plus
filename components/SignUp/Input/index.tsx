@@ -1,6 +1,7 @@
 import { signIn } from 'next-auth/react'
 import React from 'react'
 import { Container } from '../styles'
+import { EmailInput, SignUpLink } from './styles'
 
 function Input() {
   return (
