@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import SignUp from '../components/SignUp'
 
 
-const Login: NextPage = () => {
+function Login  () {
     const {data:session, status} = useSession();
     const router = useRouter()
 
