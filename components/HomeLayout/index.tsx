@@ -1,11 +1,17 @@
 import React from 'react'
 
+import SliderBanner from './SliderBanner'
+import { Container } from './styles'
+
 type Props = {}
 
-function HomeLayout({}: Props) {
+ export default function HomeLayout({}: Props) {
   return (
-    <div></div>
+   <Container>
+          <SliderBanner  />
+    </Container >
+      
+
   )
 }
 
-export default HomeLayout

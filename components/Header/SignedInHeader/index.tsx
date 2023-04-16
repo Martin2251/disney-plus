@@ -7,7 +7,7 @@ interface Props  {
     session: Session;
 }
 
-function SignedInHeader({session}: Props) {
+ export default function SignedInHeader({session}: Props) {
     console.log(session)
     const image = session?.user?.image as string
     const name = session?.user?.image as string
@@ -50,5 +50,3 @@ function SignedInHeader({session}: Props) {
   </>
   )
 }
-
-export default SignedInHeader

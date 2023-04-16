@@ -1,10 +1,12 @@
+
 import type { NextPage } from 'next'
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import HomeLayout from '../components/HomeLayout';
 
 
- export function Home (){
+ export default  function Home (){
 
   const {data:session, status} = useSession();
     const router = useRouter()
@@ -17,6 +19,8 @@ import { useEffect } from 'react';
             });
         }
         return () => {};
+   
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
 if (status === 'loading') return <p>Loading</p>

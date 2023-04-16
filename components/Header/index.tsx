@@ -5,7 +5,7 @@ import SignedInHeader from './SignedInHeader'
 
 
 
-function Header() {
+export default function Header() {
     const {data: session, status} = useSession();
 
     const renderHeader = () => {
@@ -30,4 +30,3 @@ function Header() {
   )
 }
 
-export default Header

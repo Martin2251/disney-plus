@@ -3,7 +3,7 @@ import React from 'react'
 import { Container } from '../styles'
 import { EmailInput, SignUpLink } from './styles'
 
-function Input() {
+ export default function Input() {
   return (
    <Container>
     <EmailInput placeholder="Email"  />
@@ -14,4 +14,3 @@ function Input() {
   )
 }
 
-export default Input

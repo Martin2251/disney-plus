@@ -3,7 +3,7 @@ import Input from "./Input";
 
 import { Container, CTA, Description, DisneyLogo, Headline } from "./styles";
 
-function SignUp() {
+ export default function SignUp() {
   return (
     <Container>
       <CTA>
@@ -27,4 +27,3 @@ function SignUp() {
   );
 }
 
-export default SignUp;
