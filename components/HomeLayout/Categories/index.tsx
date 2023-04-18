@@ -1,19 +1,21 @@
-import React from 'react'
-import { Container } from '../styles'
-import CategoryContent from './CategoryContent'
-import { VideoData } from './Data'
-import { Wrapper } from './styles'
+import React from "react";
+import CategoryContent from "./CategoryContent";
+import { VideoData } from "./Data";
+import { Container, Wrapper } from "./styles";
 
-function Categories() {
+export default function Categories() {
   return (
     <Container>
-      {VideoData?.map((item) => {
+      {VideoData?.map((item) => (
         <Wrapper key={item.id}>
-          <CategoryContent video={item.video} defaultImage={item.imageUrl} name={item.name}/>
+          <CategoryContent
+            video={item.video}
+            defaultImage={item.imageUrl}
+            name={item.name}
+          />
         </Wrapper>
-      })}
+      ))}
     </Container>
   );
-  }
+}
 
-  export default Categories
